@@ -1,0 +1,5 @@
+<h1>Child Component</h1>
+<span [class.bold-text]="isEvenId(person.id)">{{ person.id }}: {{ person.name }}</span>
+
+<input type="text" [(ngModel)]="updatedName" />
+<button type="button" (click)="updatePerson()">Update Name</button>
